@@ -5,9 +5,8 @@ import math
 
 
 s = Session(tempo=60)
-# s.apply_rate_function(lambda t: 1 + 0.5 * math.sin(t / 2))
 
-piano = s.new_midi_part("midi through 0")
+piano = s.new_part("piano")  # s.new_midi_part("midi through 0")
 
 pitches = [60, 62, 64, 67, 69, 72]
 pitches = [x + 6 for x in pitches]
